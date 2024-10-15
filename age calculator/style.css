@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;font-family: "Poppins", sans-serif;
+}
+
+#container{
+    position: relative;
+    width:100%;
+    min-height:100vh;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding: 2%;
+
+}
+
+#content{
+    margin-top:10%;
+    margin-left:5%;
+    font-size: 3vw;
+    /* line-height: 100px; */
+}
+
+span{
+    color:yellow;
+    
+}
+
+
+/* this is input field box */
+
+#input-box{
+    
+    margin:40px 0px;
+    width: 60%;
+    padding:30px;
+    background-color:  rgb(228, 228, 228,30%) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#date{
+    width: 80%;
+    margin-right:10px;
+    padding:10px 10px;
+    font-size:1.2rem;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    position: relative;
+    background-color:white;
+}
+
+#input-box button{
+    font-size: 1rem;
+    padding:10px;
+    background-color: #ffff67;
+    color:#333;
+    border-radius:10px;
+    font-weight: 500px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+#date::-webkit-calendar-picker-indicator{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 5px) ;
+    background-size: 20px;
+    
+    cursor:pointer;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+@media (max-width:600px) 
+{
+    #content{
+        margin-top: 30%;
+        font-size: 3vh;
+    }
+    #input-box{
+        
+        width: 95%;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* height: 100%; */
+    }
+    #input-box button{
+        margin-top:20px;
+        font-size:3vh ;
+    }
+    p{
+        font-size: 3vh;
+    }
+}
